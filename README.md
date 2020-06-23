@@ -14,7 +14,10 @@ El modelo fue entrenado con los siguientes datasets:
 - [ ] [CCPD Chinese City Parking Dataset, ECCV](https://github.com/detectRecog/CCPD)
 
 Los detalles de entramiento se encuentran en el yolov4_custom.cfg.
-Se uso 448x448 para (height,width), con random=1 (multi-scale training) y mosaic=1 (Mosaic Data Augmentation)
+Se uso:
+* 448x448 para (height,width)
+* random=1 (multi-scale training)
+* mosaic=1 (Mosaic Data Augmentation)
 
 ## Como usarlo
 
@@ -23,7 +26,7 @@ Para las patentes usa la .cfg y .weights provista en este repo.
 
 ## Citas
 
-`
+```
 @inproceedings{xu2018towards,
   title={Towards End-to-End License Plate Detection and Recognition: A Large Dataset and Baseline},
   author={Xu, Zhenbo and Yang, Wei and Meng, Ajin and Lu, Nanxue and Huang, Huan},
@@ -31,4 +34,4 @@ Para las patentes usa la .cfg y .weights provista en este repo.
   pages={255--271},
   year={2018}
 }
-`
+```
