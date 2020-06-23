@@ -3,7 +3,7 @@
 ## ¿Qué es YOLO?
 
 YOLO v4 es un one-stage object detector (a diferencia de los two-stage, no tiene Region Proposal Networks). YOLO es rapido y preciso.
-Por el entrenamiento de distintas escalas de imagenes (multi-scale training) se pueden usar los mismos weights/parametros aprendidos para imagenes de distintas resoluciones. Cabe rescatar que mayor la resolución, mayor el costo de computación (Cada filtro de la CNN tiene que mas pasadas)
+Por el entrenamiento de distintas escalas de imagenes (multi-scale training) se pueden usar los mismos weights/parametros aprendidos para imagenes de distintas resoluciones. Cabe rescatar que mayor la resolución, mayor el costo de computación (Cada filtro de la CNN tiene que hacer mas pasadas)
 
 ## Entrenamiento
 
@@ -39,7 +39,8 @@ Se uso:
 
 Luego de la 6000 iteración empiezar a decaer el performance ([over-fitting](https://en.wikipedia.org/wiki/Overfitting))
 
-*Nota: El .weights es el modelo correspondiente a la iteración 6000*
+*Nota: El archivo .weights es del modelo correspondiente a la iteración 6000*
+
 
 ## Como usarlo
 
