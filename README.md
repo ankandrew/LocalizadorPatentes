@@ -19,10 +19,33 @@ Se uso:
 * random=1 (multi-scale training)
 * mosaic=1 (Mosaic Data Augmentation)
 
+## Gráfico del entrenamiento
+<img src="training_chart.png" width="480" height="480">
+
+** No se muestra validation loss no se uso mientras se entrenaba. Se valido luego en dataset de prueba de OpenImages (VehiclePlates)
+
+###### Resultados de la validación (448x448)
+
+| Iteracion  | mAP |
+| ----------- | ----------- |
+| 1000  | 0.7763  |
+| 2000  | 0.8487  |
+| 3000  | 0.8699  |
+| 4000  | 0.8701  |
+| 5000  | 0.8714  |
+| 6000  | **0.8760**  |
+| 7000  | 0.8698  |
+| 8000  | 0.8614  |
+
+Luego de la 6000 iteración empiezar a decaer el performance ([over-fitting](https://en.wikipedia.org/wiki/Overfitting))
+
+*Nota: El .weights es el modelo correspondiente a la iteración 6000*
+
 ## Como usarlo
 
-Para descargar, compilar y usar YOLO v4 seguí el (tutorial oficial)[https://github.com/AlexeyAB/darknet]
-Para las patentes usa la .cfg y .weights provista en este repo.
+Para descargar, compilar y usar YOLO v4 seguí el [tutorial oficial](https://github.com/AlexeyAB/darknet)
+
+Solo hay que utilizar el [.cfg](yolov4-custom.cfg) y .[weights](https://ufile.io/3fbpbqfh) provista en este repo.
 
 ## Citas
 
