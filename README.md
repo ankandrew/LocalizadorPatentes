@@ -2,8 +2,8 @@
 
 ## ¿Qué es YOLO?
 
-YOLO v4 es un one-stage object detector (a diferencia de los two-stage, no tienen Region Proposal Networks). YOLO es rapido y preciso.
-Por el entrenamiento de distintas escalas de imagenes (multi-scale training) se pueden usar los mismos weights/parametros aprendidos para imagenes de distinta resolucion.
+YOLO v4 es un one-stage object detector (a diferencia de los two-stage, no tiene Region Proposal Networks). YOLO es rapido y preciso.
+Por el entrenamiento de distintas escalas de imagenes (multi-scale training) se pueden usar los mismos weights/parametros aprendidos para imagenes de distintas resoluciones. Cabe rescatar que mayor la resolución, mayor el costo de computación (Cada filtro de la CNN tiene que pasar mas veces -> mayores (MAC)[https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation])
 
 ## Entrenamiento
 
@@ -14,7 +14,7 @@ El modelo fue entrenado con los siguientes datasets:
 - [ ] [CCPD Chinese City Parking Dataset, ECCV](https://github.com/detectRecog/CCPD)
 
 Los detalles de entramiento se encuentran en el yolov4_custom.cfg.
-Cabe rescatar que se uso 448x448, con random=1 (multi-scale) y mosaic=1 (Mosaic Data Augmentation)
+Se uso 448x448 para (height,width), con random=1 (multi-scale training) y mosaic=1 (Mosaic Data Augmentation)
 
 ## Como usarlo
 
