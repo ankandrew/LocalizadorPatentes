@@ -31,7 +31,7 @@ Se uso:
 * mosaic=1 (Mosaic Data Augmentation)
 
 ## Gráfico del entrenamiento
-<img src="training_chart.png" width="460" height="460">
+<img src="yolo_v4_448x448/training_chart.png" width="460" height="460">
 
 ** No se muestra validation loss no se uso mientras se entrenaba. Se valido luego en dataset de prueba de OpenImages (VehiclePlates)
 
@@ -66,13 +66,13 @@ Se uso:
 
 Spatial Pyramid Pooling es un método de aumentar el receptive field del modelo (mayor recepción de pixeles), sin causar un notable costo extra de computación. Esto los autores de YOLO v4 lo implementan de la siguiente forma:
 
-<img src="tiny_v4_spp_608x608/imgs/SPP.png">
+<img src="yolo_tiny_v4_spp_608x608/imgs/SPP.png">
 
 Recibe un volumen de 19x19x512 (*H,W,C*) y le aplica Max-Pooling con *filtros* de tamaño 5x5 y 3x3 (Usa padding para que *H* y *W* preserven el tamaño). Al resultado de estos dos volúmenes los concatena con el bloque original, formando un nuevo volumen de 19x19x1536
 
 ## Gráfico del entrenamiento
 
-<img src="tiny_v4_spp_608x608/imgs/chart_yolov4-tiny-spp-608x608.png" width="460" height="460">
+<img src="yolo_tiny_v4_spp_608x608/imgs/chart_yolov4-tiny-spp-608x608.png" width="460" height="460">
 
 *Los parametros aprendidos corresponden al modelo con mayor mAp (en el dataset de validación)*
 
@@ -80,9 +80,9 @@ Recibe un volumen de 19x19x512 (*H,W,C*) y le aplica Max-Pooling con *filtros* d
 
 Para descargar, compilar y usar YOLO v4 seguí el [tutorial oficial](https://github.com/AlexeyAB/darknet)
 
-Solo hay que utilizar el [.cfg](yolov4-custom.cfg) y .[weights](https://ufile.io/3fbpbqfh) provista en este repo.
+Para YOLO v4 hay que utilizar el [.cfg](yolo_v4_448x448/yolov4-custom.cfg) y .[weights](https://ufile.io/3fbpbqfh)
 
-Para Yolo v4 tiny es igual, pero con el .cfg y weights encontrados en la carpeta tiny_v4_spp_608x608
+Para YOLO v4 tiny es igual, pero con el .cfg y weights encontrados en la carpeta yolo_tiny_v4_spp_608x608 o *sin SPP* en yolo_tiny_v4_no-spp_608x608 
 
 Si lo quieren correr en la nube: demo en [colab](https://colab.research.google.com/drive/12SimiWuyrB5hcxjJOJGTmxBblwI0-W5G?usp=sharing)
 
