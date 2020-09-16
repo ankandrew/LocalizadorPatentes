@@ -15,12 +15,6 @@ Por el entrenamiento de distintas escalas de imagenes (multi-scale training) se 
 " target="_blank"><img src="http://img.youtube.com/vi/2GDMsFE_zKQ/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="300" height="240" border="10" /></a>
 
-Para saber como opera **a alto nivel** una ConvNet, sugiero el video:
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=3feOkIinEig
-" target="_blank"><img src="http://img.youtube.com/vi/3feOkIinEig/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="300" height="240" border="10" /></a>
-
 # Yolo v4
 
 ## Entrenamiento
