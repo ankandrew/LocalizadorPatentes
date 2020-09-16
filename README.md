@@ -15,6 +15,8 @@ Por el entrenamiento de distintas escalas de imagenes (multi-scale training) se 
 " target="_blank"><img src="http://img.youtube.com/vi/2GDMsFE_zKQ/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="300" height="240" border="10" /></a>
 
+*Aclaracion: Este modulo es utilizado en [ConvALPR](https://github.com/ankandrew/ConvALPR)*
+
 # Yolo v4
 
 ## Entrenamiento
