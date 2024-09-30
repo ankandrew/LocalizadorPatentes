@@ -1,3 +1,5 @@
+## 🔥 ¡NUEVO! Para una detección de patentes que usa YOLOv9, revisa el repo [open-image-models](https://github.com/ankandrew/open-image-models) con modelos entrenados con aún más datos. 🚀
+
 # LocalizadorPatentes
 
 ![](extra/demo_localizador.gif)
